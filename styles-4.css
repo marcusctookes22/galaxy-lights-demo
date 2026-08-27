@@ -1,0 +1,122 @@
+
+    .footer-faq-head p{
+      max-width:260px;
+      margin:0;
+      color:#686868;
+      font-size:10px;
+      line-height:1.7;
+      text-align:right;
+    }
+    .footer-faq-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:0 34px;
+    }
+    .footer-faq .faq{
+      border-top:0;
+    }
+    .footer-faq-column{
+      border-top:1px solid rgba(255,255,255,.075);
+    }
+    .footer-faq .faq-item{
+      border-bottom:1px solid rgba(255,255,255,.075);
+    }
+    .footer-faq .faq-q{
+      min-height:60px;
+      padding:17px 0;
+      gap:18px;
+      color:#d1d1cf;
+      font-size:12px;
+      line-height:1.45;
+    }
+    .footer-faq .faq-q span:last-child{
+      flex:0 0 auto;
+      color:var(--gold);
+      font-size:17px;
+      font-weight:300;
+    }
+    .footer-faq .faq-a{
+      color:#747474;
+      font-size:10.5px;
+      line-height:1.75;
+    }
+    .footer-faq .faq-a p{
+      max-width:none;
+      padding:0 32px 18px 0;
+    }
+    .footer-faq .faq-item.open .faq-a{
+      max-height:280px;
+    }
+
+    .footer-bottom{
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      border-top:1px solid var(--line);
+      padding-top:22px;
+      color:#525252;
+      font-size:9px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    @media(max-width:1080px){
+      .footer-expanded{
+        grid-template-columns:1fr;
+        gap:44px;
+      }
+      .footer-brand-panel{
+        position:static;
+        display:grid;
+        grid-template-columns:180px minmax(0,1fr);
+        column-gap:30px;
+        align-items:center;
+        padding-right:0;
+      }
+      .footer-logo{width:180px;margin:0;grid-row:1/3}
+      .footer-brand-cta{justify-self:start;margin-top:14px}
+      .footer-content-panel{
+        border-left:0;
+        border-top:1px solid var(--line);
+        padding-left:0;
+        padding-top:36px;
+      }
+    }
+
+    @media(max-width:720px){
+      footer{padding-top:58px}
+      .footer-brand-panel{
+        display:block;
+      }
+      .footer-logo{width:165px;margin-bottom:20px}
+      .footer-nav-grid{
+        grid-template-columns:1fr 1fr;
+        gap:28px 20px;
+      }
+      .footer-nav-grid .footer-col:last-child{
+        grid-column:1/-1;
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+      .footer-nav-grid .footer-col:last-child h4{
+        grid-column:1/-1;
+      }
+      .footer-faq-head{
+        display:block;
+      }
+      .footer-faq-head p{
+        margin-top:10px;
+        text-align:left;
+      }
+      .footer-faq-grid{
+        grid-template-columns:1fr;
+        gap:0;
+      }
+      .footer-faq-column + .footer-faq-column{
+        border-top:0;
+      }
+      .footer-bottom{
+        display:block;
+        line-height:2;
+      }
+    }
