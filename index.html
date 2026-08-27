@@ -1,1 +1,340 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#02030a"><meta name="description" content="Galaxy Car Lights — custom automotive lighting, starlight headliners, and premium finishes."><title>Galaxy Car Lights | Custom automotive lighting</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles-1.css?v=3"><link rel="stylesheet" href="styles-2.css?v=3"><link rel="stylesheet" href="styles-3.css?v=3"><link rel="stylesheet" href="styles-4.css?v=3"><link rel="stylesheet" href="galaxy-v2.css?v=3"><link rel="stylesheet" href="galaxy-v2-polish.css?v=2"><link rel="stylesheet" href="galaxy-reference.css?v=2"><link rel="stylesheet" href="galaxy-final-polish.css?v=2"><style>html,body{margin:0;background:#02030a;color:#f8f8ff}#boot{min-height:100vh;display:grid;place-items:center;font-family:Manrope,Arial,sans-serif;color:#8e94ae;letter-spacing:.08em;font-size:12px}</style></head><body><div id="boot">GALAXY CAR LIGHTS</div><script>(async()=>{const get=async f=>{const r=await fetch(f,{cache:'no-store'});if(!r.ok)throw new Error(`${f}: ${r.status}`);return r.text()};const bodyFiles=["body-1.html","body-2.html","body-3.html","body-4.html"];const parts=await Promise.all(bodyFiles.map(get));document.body.innerHTML=parts.join('');const load=src=>new Promise((ok,fail)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>fail(new Error(`Failed to load ${src}`));document.body.appendChild(s)});await load('galaxy-brand-logo.js?v=2');await load('asset-boot-v20.js?v=21');const jsFiles=["script-1.js","script-2.js","script-3.js"];const js=(await Promise.all(jsFiles.map(get))).join('\n');const app=document.createElement('script');app.textContent=js;document.body.appendChild(app);await load('galaxy-v2.js?v=4')})().catch(err=>{console.error(err);document.body.innerHTML='<main style="min-height:100vh;display:grid;place-items:center;background:#02030a;color:#f8f8ff;font-family:Arial,sans-serif"><div style="text-align:center;padding:40px"><h1>Galaxy Car Lights</h1><p style="color:#a8abd1">The demo could not finish loading. Refresh the page.</p></div></main>'});</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#03040b">
+  <meta name="description" content="Galaxy Car Lights creates custom starlight headliners and exterior contour lighting for a distinctive after-dark presence.">
+  <title>Galaxy Car Lights | Custom automotive lighting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="galaxy-brand-logo.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Galaxy Car Lights home">
+        <img class="brand-logo js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights">
+        <span class="brand-wordmark">GALAXY CAR LIGHTS</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-quote" href="#quote">Request a quote</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#studio">Studio</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a class="mobile-quote" href="#quote">Request a quote</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <canvas id="heroStars" aria-hidden="true"></canvas>
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span>Custom automotive lighting</div>
+          <h1 id="heroTitle">Light that changes<br><em>how your car feels.</em></h1>
+          <p>Starlight headliners and vehicle-specific exterior contour lighting, designed around your exact car and the presence you want after dark.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#quote">Start your build <span>↗</span></a>
+            <a class="button button-ghost" href="#work">View selected work <span>↓</span></a>
+          </div>
+          <div class="hero-trust" aria-label="Galaxy service highlights">
+            <span>Vehicle-specific</span><i></i><span>By appointment</span><i></i><span>Custom finish</span>
+          </div>
+        </div>
+        <div class="hero-brand reveal" aria-hidden="true">
+          <div class="logo-orbit orbit-one"></div>
+          <div class="logo-orbit orbit-two"></div>
+          <img class="hero-logo js-logo" src="galaxy-logo.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Service highlights">
+      <div class="container metrics-grid">
+        <article><span class="metric-icon">✦</span><strong>300–2500+</strong><small>Starlight densities</small></article>
+        <article><span class="metric-icon">⌁</span><strong>Custom contour</strong><small>Vehicle-specific routing</small></article>
+        <article><span class="metric-icon">◌</span><strong>Twinkle / sequence</strong><small>Optional show effects</small></article>
+        <article><span class="metric-icon">1:1</span><strong>Build consultation</strong><small>Designed around your car</small></article>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span></span>Signature services</div>
+            <h2>Two ways to make the night <em>yours.</em></h2>
+          </div>
+          <p>Galaxy stays focused on two specialties so each build can be planned cleanly: custom fiber-optic headliners and exterior lighting integrated into the vehicle’s lines.</p>
+        </div>
+        <div class="service-grid">
+          <a class="service-card reveal" href="#studio">
+            <span class="service-number">01</span>
+            <div class="service-icon">✦</div>
+            <h3>Starlight headliners</h3>
+            <p>Choose density, roof layout, color and effects for a ceiling built around the vehicle rather than a generic pattern.</p>
+            <span class="card-link">Preview your sky <b>→</b></span>
+          </a>
+          <a class="service-card reveal" href="#exterior">
+            <span class="service-number">02</span>
+            <div class="service-icon contour-icon">⌁</div>
+            <h3>Exterior contour lighting</h3>
+            <p>Illumination routed to selected body lines, vents and fascia geometry for a deliberate, concept-car-inspired signature.</p>
+            <span class="card-link">Explore exterior <b>→</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-panel" id="exterior">
+      <div class="feature-image" aria-hidden="true"></div>
+      <div class="feature-overlay" aria-hidden="true"></div>
+      <div class="container feature-content reveal">
+        <div class="eyebrow"><span></span>Signature 02 / Exterior contour</div>
+        <h2>Sculpted<br><em>in light.</em></h2>
+        <p>Not generic underglow. The lighting is mapped to selected exterior geometry to create a cleaner, integrated nighttime profile.</p>
+        <div class="feature-points">
+          <span>Vehicle-specific routing</span>
+          <span>Hidden wiring</span>
+          <span>Static + programmable options</span>
+        </div>
+        <a class="button button-primary" href="#quote" data-service-select="Exterior Contour Lighting">Request exterior build <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section studio-section" id="studio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span></span>Interactive starlight studio</div>
+            <h2>See your sky before we <em>build it.</em></h2>
+          </div>
+          <p>Use the studio as a visual planning tool. Final placement and fiber routing still depend on the exact roof structure and trim.</p>
+        </div>
+        <div class="studio-grid">
+          <div class="preview-card reveal">
+            <div class="preview-header">
+              <span class="live-dot"><i></i> Live preview</span>
+              <strong id="previewCount">850 stars</strong>
+            </div>
+            <div class="headliner-stage">
+              <canvas id="headlinerCanvas" aria-label="Interactive starlight headliner preview"></canvas>
+              <span class="preview-hint" id="previewHint">Preview mode</span>
+            </div>
+            <div class="preview-toolbar">
+              <button class="tool-button" id="designModeBtn" type="button">Design mode</button>
+              <button class="tool-button" id="clearStarsBtn" type="button">Clear custom</button>
+              <button class="tool-button" id="surpriseBtn" type="button">Surprise me</button>
+              <button class="tool-button" id="savePreviewBtn" type="button">Save PNG</button>
+            </div>
+          </div>
+          <aside class="control-card reveal" aria-label="Starlight design controls">
+            <div class="control-group">
+              <div class="control-label"><span>Star density</span><strong id="densityLabel">850</strong></div>
+              <div class="chip-grid density-options" role="group" aria-label="Star density">
+                <button class="chip" type="button" data-control="density" data-value="300">300</button>
+                <button class="chip" type="button" data-control="density" data-value="500">500</button>
+                <button class="chip active" type="button" data-control="density" data-value="850">850</button>
+                <button class="chip" type="button" data-control="density" data-value="1500">1,500</button>
+                <button class="chip" type="button" data-control="density" data-value="2500">2,500</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label"><span>Pattern</span><strong id="patternLabel">Night sky</strong></div>
+              <div class="chip-grid three" role="group" aria-label="Star pattern">
+                <button class="chip active" type="button" data-control="pattern" data-value="night">Night sky</button>
+                <button class="chip" type="button" data-control="pattern" data-value="galaxy">Galaxy arc</button>
+                <button class="chip" type="button" data-control="pattern" data-value="halo">Halo edge</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label"><span>Color</span><strong id="colorLabel">Ice white</strong></div>
+              <div class="chip-grid four" role="group" aria-label="Star color">
+                <button class="chip active color-chip" type="button" data-control="color" data-value="ice"><i style="--swatch:#e8f8ff"></i>Ice</button>
+                <button class="chip color-chip" type="button" data-control="color" data-value="violet"><i style="--swatch:#b58cff"></i>Violet</button>
+                <button class="chip color-chip" type="button" data-control="color" data-value="blue"><i style="--swatch:#6ab8ff"></i>Blue</button>
+                <button class="chip color-chip" type="button" data-control="color" data-value="rgb"><i class="rgb"></i>RGB</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label"><span>Roof</span><strong id="roofLabel">Panoramic</strong></div>
+              <div class="chip-grid three" role="group" aria-label="Roof type">
+                <button class="chip" type="button" data-control="roof" data-value="solid">Solid</button>
+                <button class="chip" type="button" data-control="roof" data-value="sunroof">Sunroof</button>
+                <button class="chip active" type="button" data-control="roof" data-value="panoramic">Panoramic</button>
+              </div>
+            </div>
+            <div class="control-group effects-row">
+              <button class="toggle active" id="twinkleToggle" type="button" aria-pressed="true"><span>Twinkle</span><i></i></button>
+              <button class="toggle active" id="shootingToggle" type="button" aria-pressed="true"><span>Shooting stars</span><i></i></button>
+            </div>
+            <button class="button button-primary full" id="useDesignBtn" type="button">Use this design <span>→</span></button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span></span>Selected direction</div>
+            <h2>Interior sky.<br>Exterior <em>signature.</em></h2>
+          </div>
+          <p>These images are visual direction for the demo. Real installation photography should replace them before the production launch.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card large reveal">
+            <img src="https://images.unsplash.com/photo-1768024175212-98eb7cd5ca46?auto=format&fit=crop&w=1400&q=82" alt="Luxury vehicle interior at night" loading="lazy" decoding="async">
+            <div class="work-card-copy"><span>Interior</span><h3>Private night sky</h3><a href="#studio">Preview yours →</a></div>
+          </article>
+          <article class="work-card reveal">
+            <img src="https://images.unsplash.com/photo-1680902978647-fa879e73aecb?auto=format&fit=crop&w=1000&q=82" alt="Performance car rear at night" loading="lazy" decoding="async">
+            <div class="work-card-copy"><span>Exterior</span><h3>Rear signature</h3><a href="#quote" data-service-select="Exterior Contour Lighting">Request →</a></div>
+          </article>
+          <article class="work-card reveal">
+            <img src="https://images.unsplash.com/photo-1776639520962-dad59bd15197?auto=format&fit=crop&w=1000&q=82" alt="Custom vehicle lighting concept" loading="lazy" decoding="async">
+            <div class="work-card-copy"><span>Combined</span><h3>Galaxy signature</h3><a href="#quote" data-service-select="Starlight + Exterior Contour">Build both →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <div><div class="eyebrow"><span></span>The Galaxy process</div><h2>From idea to <em>after dark.</em></h2></div>
+          <p>Every project starts with the exact vehicle, because roof construction, trim, access and body geometry all change the build.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><span>01</span><h3>Send the vehicle</h3><p>Year, make, model, trim and a few photos give us the starting point.</p></article>
+          <article class="process-card reveal"><span>02</span><h3>Choose the signature</h3><p>Starlight, exterior contour or both—plus density, color and effects.</p></article>
+          <article class="process-card reveal"><span>03</span><h3>Approve + book</h3><p>We confirm feasibility, final scope, pricing and the installation appointment.</p></article>
+          <article class="process-card reveal"><span>04</span><h3>Reveal the build</h3><p>Pick up a car with a completely different presence after dark.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section">
+      <div class="container trust-grid">
+        <div class="trust-copy reveal">
+          <div class="eyebrow"><span></span>Built around the finish</div>
+          <h2>Premium should look <em>integrated.</em></h2>
+          <p>The goal is not to make the lighting louder. It is to make the car feel intentional: clean routing, discreet hardware and a design that belongs to the vehicle.</p>
+        </div>
+        <div class="trust-cards">
+          <article class="mini-card reveal"><i>01</i><h3>Vehicle-first planning</h3><p>No one-size-fits-all installation map.</p></article>
+          <article class="mini-card reveal"><i>02</i><h3>Discreet hardware</h3><p>Wiring and control hardware kept as clean as the vehicle allows.</p></article>
+          <article class="mini-card reveal"><i>03</i><h3>Night-focused design</h3><p>Color, intensity and placement planned for the final after-dark look.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="quote">
+      <div class="container quote-layout">
+        <div class="quote-copy reveal">
+          <div class="eyebrow"><span></span>Private consultation</div>
+          <h2>Start your<br><em>build.</em></h2>
+          <p>Tell us what you drive and which Galaxy signature you want. The details below are the ones that actually affect planning.</p>
+          <div class="quote-note">This demo collects your project details locally. Business contact delivery can be connected before launch.</div>
+        </div>
+        <form class="quote-form reveal" id="quoteForm" novalidate>
+          <div class="form-section">
+            <span class="form-number">01</span><div><h3>Your vehicle</h3><p>Start with the exact car.</p></div>
+          </div>
+          <div class="field-grid three">
+            <label><span>Year</span><input name="year" inputmode="numeric" placeholder="2024" required></label>
+            <label><span>Make</span><input name="make" placeholder="Mercedes-Benz" required></label>
+            <label><span>Model / trim</span><input name="model" placeholder="C63 S" required></label>
+          </div>
+          <div class="form-section">
+            <span class="form-number">02</span><div><h3>Galaxy signature</h3><p>Select the direction.</p></div>
+          </div>
+          <div class="service-options" role="radiogroup" aria-label="Service">
+            <label><input type="radio" name="service" value="Starlight Headliner" required><span>✦ Starlight headliner</span></label>
+            <label><input type="radio" name="service" value="Exterior Contour Lighting"><span>⌁ Exterior contour</span></label>
+            <label><input type="radio" name="service" value="Starlight + Exterior Contour"><span>◌ Both services</span></label>
+          </div>
+          <div class="form-section">
+            <span class="form-number">03</span><div><h3>Contact + notes</h3><p>How should we follow up?</p></div>
+          </div>
+          <div class="field-grid two">
+            <label><span>Name</span><input name="name" autocomplete="name" placeholder="Your name" required></label>
+            <label><span>Phone</span><input name="phone" autocomplete="tel" inputmode="tel" placeholder="(000) 000-0000" required></label>
+            <label class="full"><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label class="full"><span>Build notes</span><textarea name="notes" rows="4" placeholder="Color, roof details, exterior areas, inspiration, or anything else that matters."></textarea></label>
+          </div>
+          <input type="hidden" name="studioDesign" id="studioDesign">
+          <div class="form-footer">
+            <p>Your information stays in the browser in this demo.</p>
+            <button class="button button-primary" type="submit">Create project summary <span>↗</span></button>
+          </div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container closing-inner reveal">
+        <span class="closing-logo-wrap"><img class="js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights"></span>
+        <p>Galaxy Car Lights</p>
+        <h2>Own the sky.<br><em>Shape the night.</em></h2>
+        <a class="button button-primary" href="#quote">Request your build <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="faq">
+    <div class="container footer-shell">
+      <div class="footer-brand">
+        <img class="footer-logo js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights">
+        <h3>Galaxy Car Lights</h3>
+        <p>Custom starlight headliners and exterior contour lighting for a signature presence after dark.</p>
+        <a href="#quote">Request your build →</a>
+      </div>
+      <div class="footer-main">
+        <div class="footer-nav">
+          <div><span>Explore</span><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a></div>
+          <div><span>Studio</span><a href="#studio">Starlight preview</a><a href="#exterior">Exterior contour</a><a href="#quote">Combined build</a></div>
+          <div><span>Project</span><a href="#quote">Request a quote</a><a href="#faq">FAQ</a><a href="#top">Back to top</a></div>
+        </div>
+        <div class="faq-block">
+          <div class="faq-heading"><div><span>FAQ</span><h3>Frequently asked.</h3></div><p>Quick answers before we touch your vehicle.</p></div>
+          <div class="faq-grid">
+            <div>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>How long does an installation take?</span><b>+</b></button><div class="faq-answer"><p>Timing depends on the vehicle, roof construction, star density and exterior routing. A project-specific estimate is confirmed with the quote.</p></div></article>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>Can I choose the number, color and pattern of the stars?</span><b>+</b></button><div class="faq-answer"><p>Yes. Density, color, layout and optional effects can be planned around the exact roof and desired finish.</p></div></article>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>What is exterior contour lighting?</span><b>+</b></button><div class="faq-answer"><p>Custom accent lighting routed to selected body geometry rather than a universal strip placed under the vehicle.</p></div></article>
+            </div>
+            <div>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>Can the exterior lights animate or change colors?</span><b>+</b></button><div class="faq-answer"><p>Depending on the hardware, builds can support static colors or programmable effects. Public-road lighting rules vary by location.</p></div></article>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>Will the wiring and installation be hidden?</span><b>+</b></button><div class="faq-answer"><p>The design goal is a clean integrated finish with wiring, controllers and mounting kept as discreet as the vehicle allows.</p></div></article>
+              <article class="faq-item"><button type="button" aria-expanded="false"><span>Why is the quote vehicle-specific?</span><b>+</b></button><div class="faq-answer"><p>Roof construction, trim, access points and exterior geometry vary dramatically, so feasibility and scope need to be planned around the exact car.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Galaxy Car Lights LLC</span><span>Custom lighting · By appointment</span></div>
+    </div>
+  </footer>
+</body>
+</html>
