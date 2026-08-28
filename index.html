@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="galaxy-brand-logo.js"></script>
+  <link rel="preload" as="image" href="hero-luxury.webp" type="image/webp">
+  <link rel="stylesheet" href="hero.css">
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
   <header class="site-header" id="top">
     <div class="nav-shell">
       <a class="brand" href="#top" aria-label="Galaxy Car Lights home">
-        <img class="brand-logo js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights">
+        <img class="brand-logo" src="galaxy-logo.webp" alt="Galaxy Car Lights">
         <span class="brand-wordmark">GALAXY CAR LIGHTS</span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
@@ -63,7 +64,7 @@
         <div class="hero-brand reveal" aria-hidden="true">
           <div class="logo-orbit orbit-one"></div>
           <div class="logo-orbit orbit-two"></div>
-          <img class="hero-logo js-logo" src="galaxy-logo.svg" alt="">
+          <img class="hero-logo" src="galaxy-logo.webp" alt="">
         </div>
       </div>
     </section>
@@ -295,7 +296,7 @@
 
     <section class="closing">
       <div class="container closing-inner reveal">
-        <span class="closing-logo-wrap"><img class="js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights"></span>
+        <span class="closing-logo-wrap"><img src="galaxy-logo.webp" alt="Galaxy Car Lights"></span>
         <p>Galaxy Car Lights</p>
         <h2>Own the sky.<br><em>Shape the night.</em></h2>
         <a class="button button-primary" href="#quote">Request your build <span>↗</span></a>
@@ -306,7 +307,7 @@
   <footer class="site-footer" id="faq">
     <div class="container footer-shell">
       <div class="footer-brand">
-        <img class="footer-logo js-logo" src="galaxy-logo.svg" alt="Galaxy Car Lights">
+        <img class="footer-logo" src="galaxy-logo.webp" alt="Galaxy Car Lights">
         <h3>Galaxy Car Lights</h3>
         <p>Custom starlight headliners and exterior contour lighting for a signature presence after dark.</p>
         <a href="#quote">Request your build →</a>
